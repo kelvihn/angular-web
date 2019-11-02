@@ -1,0 +1,377 @@
+<section>
+    <br>
+    <div class="container" id="accordion" style="text-align: left;padding: 50px; box-shadow: 1px 5px 8px;width:95%">
+        <img src="./../../assets/img/logonew.png"
+            style="height:50px;width:200px;display:block;margin-left:auto;margin-right:auto" />
+        <div class="container"
+            style="position: relative; box-shadow: 2px 5px 8px; background-color: #481270;margin-top: 30px;">
+            <p style="color: #fff; padding: 20px; text-align: center;">VERIFICATON SERVICE BRIEF
+            </p>
+        </div>
+        <div class="card" style="width: auto;">
+            <br>
+            <div class="row">
+                <div class="dropdown" style="margin-left:13px;">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="margin-left:15px;background-color:#481270;border-color:#481270;">
+                        Select Category
+                    </button>
+                    <div class=" dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item service_category" href="#">Status Verification</a>
+                        <a class="dropdown-item service_category" href="#">Title and Ownership Verification</a>
+                        <a class="dropdown-item service_category" href="#">Total Verification Package</a>
+                    </div>
+                </div>
+                <br>
+                <div class="dropdown" style="margin-left:13px;">
+                    <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        style="margin-left:15px;background-color:#481270;border-color:#481270;">
+                        Enquiry Category
+                    </button>
+                    <div class=" dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item enquiry_category" href="#">Individual Owner</a>
+                        <a class="dropdown-item enquiry_category" href="#">Developer Company</a>
+                        <a class="dropdown-item enquiry_category" href="#">Prospective Buyer</a>
+                        <a class="dropdown-item enquiry_category" href="#">Agent or Representative</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-sm" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne" style="text-align:center;color:#481270;font-weight:bold">
+                        Owner Brief
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            style="background-color:#481270;border-color:#481270;width:auto">
+                            Property Owner Category
+                        </button>
+                        <div class=" dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item owner_category" href="#">Individual</a>
+                            <a class="dropdown-item owner_category" href="#">Group of Individuals</a>
+                            <a class="dropdown-item owner_category" href="#">Family</a>
+                            <a class="dropdown-item owner_category" href="#">Developer Organisation</a>
+                        </div>
+                    </div>
+                    <br>
+                    <form id="contact" action="" method="post">
+                        <fieldset>
+                            <label><b>Owner Name</b></label>
+                            <input type="text" tabindex="1" required autofocus style="background-color: #f2f2f2"
+                                id="owner_name">
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Email Address</b></label>
+                            <input type="email" tabindex="2" required style="background-color: #f2f2f2"
+                                id="owner_email">
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Phone Number</b></label>
+                            <input type="tel" tabindex="3" required style="background-color: #f2f2f2" id="owner_phone">
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Website</b></label>
+                            <input type="url" tabindex="4" required style="background-color: #f2f2f2"
+                                id="owner_website">
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Address</b></label>
+                            <input type="url" tabindex="4" required style="background-color: #f2f2f2"
+                                id="owner_address">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card" style="width: auto">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo"
+                        style="text-align:center;color:#481270;font-weight:bold">
+                        Property Brief
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    <form id="contact" action="" method="post">
+                        <fieldset>
+                            <label><b>Estate/Property Name</b></label>
+                            <input placeholder="Enter your property/estate name" type="text" tabindex="1" required
+                                autofocus style="background-color: #f2f2f2" id="property_name">
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Property Detailed Location</b></label>
+                            <input placeholder="Plot number, street number, and area number" type="email" tabindex="2"
+                                required style="background-color: #f2f2f2" id="property_address">
+                            <br>
+                            <br>
+                            <input placeholder="City of the property" type="email" tabindex="2" required
+                                style="background-color: #f2f2f2" id="property_city">
+                            <br>
+                            <br>
+                            <input placeholder="State of the property" type="email" tabindex="2" required
+                                style="background-color: #f2f2f2" id="property_state">
+                            <br>
+                            <br>
+                            <input placeholder="Country of the property" type="email" tabindex="2" required
+                                style="background-color: #f2f2f2" id="property_country">
+                            <br>
+                            <br>
+                            <input placeholder="Mention popular landmarks" type="email" tabindex="2" required
+                                style="background-color: #f2f2f2" id="property_landmark">
+                            <br>
+                            <br>
+                            <label for="exampleFormControlTextarea2"><b>Explain Description</b></label>
+                            <textarea class="form-control rounded-0" rows="3" id="property_description">
+                                            </textarea>
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Type of Property to Verify</b></label>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" value="Building" checked>
+                                    Building</label>
+                                <label><input type="radio" name="optradio" value="Land" checked> Land</label>
+                                <label><input type="radio" name="optradio" value="Land and Building" checked> Land
+                                    and Building</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Land Size</b></label>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio2" value="200-3,000sqm" checked>
+                                    200-3,000sqm</label>
+                                <label><input type="radio" name="optradio2" value="3,000-10,000sqm">
+                                    3,000-10,000sqm</label>
+                                <label><input type="radio" name="optradio2" value="10,000 - 30,000 sqm">
+                                    10,000 - 30,000 sqm</label>
+                                <label><input type="radio" name="optradio2" value="30,000-100,000sqm">
+                                    30,000-100,000sqm</label>
+                                <label><input type="radio" name="optradio2" value="100,000-200,000sqm">
+                                    100,000-200,000sqm</label>
+                                <label><input type="radio" name="optradio2" value="Others"> Others</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Property Value</b></label>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio3" value="2-10M" checked> 2-10M</label>
+                                <label><input type="radio" name="optradio3" value="10-50M"> 10-50M</label>
+                                <label><input type="radio" name="optradio3" value="50-100M"> 50-100M</label>
+                                <label><input type="radio" name="optradio3" value="100 - 500M"> 100 -
+                                    500M</label>
+                                <label><input type="radio" name="optradio3" value="Above 500M"> Above
+                                    500M</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Inspection Representative</b></label>
+                            <div class="checkbox">
+                                <label><input type="radio" name="optradio4" value="Friend/ family" checked>
+                                    Friend/ family</label>
+                                <label><input type="radio" name="optradio4" value="The Owner"> The
+                                    Owner</label>
+                                <label><input type="radio" name="optradio4" value="The agent"> The
+                                    agent</label>
+                                <label><input type="radio" name="optradio4" value="The buyer"> The
+                                    buyer</label>
+                                <label><input type="radio" name="optradio4" value="The agent and the
+                                        buyer"> The agent and the
+                                    buyer</label>
+                                <label><input type="radio" name="optradio4" value="The seller"> The
+                                    seller</label>
+                                <label><input type="radio" name="optradio4" value="The agent and the
+                                        seller"> The agent and the
+                                    seller</label>
+                                <label><input type="radio" name="optradio4" value="The agent, the owner and the
+                                        seller"> The agent, the owner and the
+                                    seller</label>
+                                <label><input type="radio" name="optradio4" value="Others (please state
+                                        relationship)"> Others (please state
+                                    relationship)</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Details of Inspection Representative</b></label>
+                            <br>
+                            <label>Enter name of inspection representative</label>
+                            <input type="text" tabindex="2" required style="background-color: #f2f2f2"
+                                id="inspection_rep_name">
+                            <label>Enter mobile number of inspection representative</label>
+                            <input type="tel" tabindex="2" required style="background-color: #f2f2f2"
+                                id="inspection_rep_phone">
+                            <label>In case of a Developer company, enter website of company</label>
+                            <input type="url" placeholder="" tabindex="2" required style="background-color: #f2f2f2"
+                                id="inspection_rep_website">
+                        </fieldset>
+                        <fieldset>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"
+                                    style="background-color:#481270;border-color:#481270;width:auto">
+                                    Date of Inspection
+                                </button>
+                                <div class=" dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" onclick="date()">Select your date</a>
+                                    <a class="dropdown-item" href="#">Let the company handle it for you</a>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="card" style="width: auto">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree"
+                        style="text-align:center;color:#481270;font-weight:bold">
+                        Property Title
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    <form id="contact" action="" method="post">
+                        <fieldset>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio5" checked> Certificate of
+                                    Occupancy</label>
+                                <label><input type="radio" name="optradio5" value="Governor's Consent"> Governor's
+                                    Consent</label>
+                                <label><input type="radio" name="optradio5" value="Deed of Conveyance"> Deed of
+                                    Conveyance</label>
+                                <label><input type="radio" name="optradio5" value="Court Judgement"> Court
+                                    Judgement</label>
+                                <label><input type="radio" name="optradio5" value="Deed of Assignment"> Deed of
+                                    Assignment</label>
+                                <label><input type="radio" name="optradio5" value="Deed of sublease"> Deed of
+                                    sublease</label>
+                                <label><input type="radio" name="optradio5" value="Land Purchase Receipt"> Land
+                                    Purchase Receipt</label>
+                                <label><input type="radio" name="optradio5" value="Survey Plan"> Survey Plan</label>
+                                <label><input type="radio" name="optradio5" value="Beacon Sheet"> Beacon
+                                    Sheet</label>
+                                <label><input type="radio" name="optradio5" value="Approved Layout"> Approved
+                                    Layout</label>
+                                <label><input type="radio" name="optradio5" value="Building Plan Approval"> Building
+                                    Plan Approval</label>
+                                <label><input type="radio" name="optradio5" value="Renovation Permit"> Renovation
+                                    Permit</label>
+                                <label><input type="radio" name="optradio5" value="Demolition Permit"> Demolition
+                                    Permit</label>
+                                <label><input type="radio" name="optradio5" value="Others"> Others</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Snap/scan and then upload any document associated with this
+                                    property</b></label>
+                            <div class="file-upload-wrapper">
+                                <input type="file" id="input-file-now" class="file-upload" />
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="card" style="width: auto">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFive"
+                        aria-expanded="false" aria-controls="collapseFive"
+                        style="text-align:center;color:#481270;font-weight:bold">
+                        FeedBack
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                    <p style="padding: 3px;color:#481270;font-weight:bold">How did you hear about us?</p>
+                    <form id="contact" action="" method="post">
+                        <!-- Default unchecked -->
+                        <fieldset>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio6" value="Friend/Agent" checked>
+                                    Friend/Agent</label>
+                                <label><input type="radio" name="optradio6" value="Whatsapp"> Whatsapp</label>
+                                <label><input type="radio" name="optradio6" value="Mail"> Mail</label>
+                                <label><input type="radio" name="optradio6" value="Facebook"> Facebook</label>
+                                <label><input type="radio" name="optradio6" value="Instagram"> Instagram</label>
+                                <label><input type="radio" name="optradio6" value="Youtube"> Youtube</label>
+                                <label><input type="radio" name="optradio6" value="Google"> Google</label>
+                                <label><input type="radio" name="optradio6" value="Website"> Website</label>
+                                <label><input type="radio" name="optradio6" value="LinkedIn"> LinkedIn</label>
+                                <label><input type="radio" name="optradio6" value="Twitter"> Twitter</label>
+                                <label><input type="radio" name="optradio6" value="Others"> Others</label>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <p style="padding: 3px;color:#481270;font-weight:bold">Which other service would you engage
+                        next?</p>
+                    <form id="contact" action="" method="post">
+                        <!-- Default unchecked -->
+                        <fieldset>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio7"> Complete Property Buyer
+                                    Service</label>
+                                <label><input type="radio" name="optradio7" checked> Design, Build &
+                                    Manage</label>
+                                <label><input type="radio" name="optradio7" value="Sell My Property"> Sell My
+                                    Property</label>
+                                <label><input type="radio" name="optradio7" value="Property Management"> Property
+                                    Management</label>
+                                <label><input type="radio" name="optradio7" value="Property Valuation"> Property
+                                    Valuation</label>
+                                <label><input type="radio" name="optradio7" value="100% Done-For-You Investment">
+                                    100% Done-For-You Investment</label>
+                                <label><input type="radio" name="optradio7" value="Advisory"> Advisory</label>
+                                <label><input type="radio" name="optradio7" value="None for now, thanks!"> None
+                                    for now, thanks!</label>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <p style="padding: 3px;color:#481270;font-weight:bold">Preferred Communication Choice</p>
+                    <form id="contact" action="" method="post">
+                        <!-- Default unchecked -->
+                        <fieldset>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio8" value="Calls" checked> Calls</label>
+                                <label><input type="radio" name="optradio8" value="Email"> Email</label>
+                                <label><input type="radio" name="optradio8" value="Physical Meeting"> Physical
+                                    Meeting</label>
+                                <label><input type="radio" name="optradio8" value="Whatsapp"> Whatsapp</label>
+                                <label><input type="radio" name="optradio8" value="SMS"> SMS</label>
+                                <label><input type="radio" name="optradio8" value="Others"> Others</label>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <form id="contact" action="" method="post">
+                        <label for="exampleFormControlTextarea2"><b>Is there anything else you would like to
+                                know?</b></label>
+                        <textarea class="form-control rounded-0" id="more_info" rows="3">
+                                                </textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <button type="submit" id="button" class="btn btn-success btn-block"
+            style="margin-top: 20px; text-align: center; box-shadow: 2px 5px 8px; background-color:#003300;border-color:#003300"
+            onclick="get()">Proceed</button>
+    </div>
+</section>

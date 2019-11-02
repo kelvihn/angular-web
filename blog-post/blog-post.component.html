@@ -1,0 +1,63 @@
+<br>
+<br>
+<br>
+<br>
+<section>
+    <div class="container constraint" *ngFor="let item of _data_get">
+        <img src={{item.img_path}} alt="blog" class="img-small mx-auto d-block" />
+        <br>
+        <br>
+        <br>
+        <h1 style="text-align:left;color:black">{{item.blog_title}}</h1>
+        <hr style="width:30%">
+        <p style="color:gray;text-align:left">{{item.blog_category}}</p>
+        <p style="color:black;text-align:justify">{{item.blog_content}}</p>
+        <small style="text-align:left">{{item.blog_post_date}}</small>
+    </div>
+</section>
+<!--Comments section-->
+<br>
+<!--
+<section>
+    <div class="container constraint">
+        <h3 style="color:black">LEAVE A COMMENT BELOW</h3>
+        <form #comment_submit="ngForm" (ngSubmit)="onSubmit()" novalidate>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="email" class="form-control" id="name" required #name="ngModel"
+                    [class.is-invalid]="name.invalid && name.touched" [(ngModel)]="userModel.name">
+                <small class="text-danger" [class.d-none]="name.untouched || name.valid">Name is
+                    required</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" class="form-control" id="email" required #email="ngModel"
+                    [class.is-invalid]="email.invalid && email.touched" [(ngModel)]="userModel.email">
+                <small class="text-danger" [class.d-none]="email.untouched || email.valid">
+                    <small class="text-danger" [class.d-none]="email.untouched || email.valid">Email is
+                        required</small>
+            </div>
+            <div class="form-group">
+                <label for="phone">Your Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Must not be less than 10 digits" required
+                    #phone="ngModel" [class.is-invalid]="phone.invalid && phone.touched" [(ngModel)]="userModel.phone">
+                <small class="text-danger" [class.d-none]="phone.untouched || phone.valid">Phone number is
+                    required and must be more than 10 digits</small>
+            </div>
+            <div class="form-group">
+                <label for="comment">Enter Your Comment Below</label>
+                <textarea class="form-control" id="comment" rows="3" required #email="ngModel"
+                    [class.is-invalid]="comment.invalid && comment.touched" [(ngModel)]="userModel.comment"></textarea>
+                <small class="text-danger" [class.d-none]="comment.untouched || comment.valid">Your comment is
+                    important</small>
+            </div>
+            <div class="alert alert-warning">
+                <p style="color:black">Please note that the details required from you will be kept private. We need
+                    these details so we can notify You when your comment is replied. Thank You</p>
+            </div>
+            <button type="submit" class="btn btn-success" [disabled]="comment_submit.form.invalid"
+                style="background-color:#407d2b;border-color:#407d2b">Submit</button>
+        </form>
+    </div>
+</section>
+-->

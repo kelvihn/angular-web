@@ -1,0 +1,87 @@
+.sub    {
+    background-image:url("./../../assets/img/dbm-header.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:500px;
+    display:flex;
+    align-items:center;
+}
+.bg-overlay{
+    position: relative;
+    z-index: 1;
+}
+.bg-overlay::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #0d1128;
+    background: -moz-linear-gradient(45deg, #0d1128 0%, #4d4d4d 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #0d1128), color-stop(100%, #4d4d4d));
+    background: -webkit-linear-gradient(45deg, #0d1128 0%, #4d4d4d 100%);
+    background: -o-linear-gradient(45deg, #0d1128 0%, #4d4d4d 100%);
+    background: -ms-linear-gradient(45deg, #0d1128 0%, #4d4d4d 100%);
+    background: linear-gradient(45deg, #0d1128 0%, #4d4d4d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d1128', endColorstr='#4d4d4d', GradientType=1);
+    opacity: .5;
+}
+.dbm-img    {
+    background-image:url("./../../assets/img/guys.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    width:100%;
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+.grad-back  {
+    background-image: linear-gradient(to right, rgba(97, 189, 66), rgba(39, 75, 27));
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 25px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #fff;
+}
+
+#customers tr:hover {
+    background-color: #fff;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #481270;
+    color: white;
+}
+.adv > ul > li{
+    line-height: 1.8;
+}
+.dbm-img {
+    width:100%;
+    height:auto;
+}
+.dbm-img-main {
+    background-image:url("./../../assets/img/guys.jpg");
+    background-size:cover;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    width:100%;
+    height:100%;
+}

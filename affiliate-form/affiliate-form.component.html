@@ -1,0 +1,262 @@
+<br>
+<br>
+<br>
+<br>
+<section>
+    <div class="container" id="accordion" style="text-align: left;padding: 50px; box-shadow: 1px 5px 8px; width: 90%">
+
+        <form #form="ngForm" (ngSubmit)="onSubmit()">
+            <div class="container"
+                style="position: relative; box-shadow: 2px 5px 8px; background-color: #481270;margin-top: 30px;">
+                <p style="color: #fff; padding: 20px; text-align: center;">AFFILIATE FORM
+                </p>
+            </div>
+            <div class="card" style="width: auto;">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne" style="text-align:center;color:#660066;font-weight:bold">
+                            Customer Details
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+
+                        <fieldset>
+                            <label for="customer_fullname"><b>Full Name</b></label>
+                            <input class="form-control" name="customer_fullname" [(ngModel)]="model.customer_fullname"
+                                #customer_fullname="ngModel" type="text" required style="background-color: #f2f2f2"
+                                id="customer_fullname">
+
+                            <div [hidden]="customer_fullname.valid || customer_fullname.pristine"
+                                class="alert alert-danger" style="margin-top:5px">
+                                This field is required
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="customer_username"><b>Username</b></label>
+                            <input class="form-control" [(ngModel)]="model.customer_username"
+                                #customer_username="ngModel" type="text" required style="background-color: #f2f2f2"
+                                id="customer_username">
+
+                            <div [hidden]="customer_username.valid || customer_username.pristine"
+                                class="alert alert-danger" style="margin-top:5px">
+                                This field is required
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="customer_password"><b>Password</b></label>
+                            <input class="form-control" type="password" [(ngModel)]="model.customer_password" required
+                                style="background-color: #f2f2f2" id="customer_password" #customer_password="ngModel">
+
+                            <div *ngIf="customer_password.touched && customer_password.invalid"
+                                class="alert alert-danger" style="margin-top:5px">
+                                Please enter your password
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Confirm Password</b></label>
+                            <input class="form-control" [(ngModel)]="model.customer_conf_password" type="password"
+                                required style="background-color: #f2f2f2" id="customer_conf_password"
+                                #customer_conf_password="ngModel">
+
+                            <div *ngIf="customer_conf_password.touched && customer_conf_password.invalid"
+                                class="alert alert-danger" style="margin-top:5px">
+                                Please confirm your password
+                            </div>
+                            <div *ngIf="customer_conf_password !=c ustomer_password" class="alert alert-danger"
+                                style="margin-top:5px">
+                                Your passwords do not match
+                            </div>
+
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Email address</b></label>
+                            <input class="form-control" [(ngModel)]="model.customer_email" type="email" required
+                                style="background-color: #f2f2f2" id="customer_email">
+
+                            <div [hidden]="customer_email.valid || customer_email.pristine" class="alert alert-danger"
+                                style="margin-top:5px">
+                                This field is required
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Mobile phone number</b></label>
+                            <input class="form-control" type="tel" tabindex="4" required
+                                style="background-color: #f2f2f2" id="customer_phone">
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Contact address</b></label>
+                            <input class="form-control" type="text" placeholder="Street name" tabindex="4" required
+                                style="background-color: #f2f2f2" id="customer_address">
+                            <input type="text" placeholder="City" tabindex="4" required
+                                style="background-color: #f2f2f2" id="customer_city">
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Upload Passport Photograph</b></label>
+                            <input class="form-control" type="file" required id="customer_passport">
+                        </fieldset>
+                        <fieldset>
+                            <label><b>Upload I.D Card</b></label>
+                            <input class="form-control" type="file" required id="customer_id">
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: auto">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo"
+                            style="text-align:center;color:#660066;font-weight:bold">
+                            Work Details
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <form class="form-group" id="contact" action="" method="post">
+                            <fieldset>
+                                <label><b>Company Name</b></label>
+                                <input class="form-control" type="text" tabindex="1" required autofocus
+                                    style="background-color: #f2f2f2" id="company_name">
+                            </fieldset>
+                            <fieldset>
+                                <label><b>Company website (optional)</b></label>
+                                <input class="form-control" type="url" tabindex="2" style="background-color: #f2f2f2"
+                                    id="company_website">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: auto">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree"
+                            style="text-align:center;color:#660066;font-weight:bold">
+                            Next of Kin Details
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <form class="form-group" id="contact" action="" method="post">
+                            <fieldset>
+                                <label><b>Name (next of kin)</b></label>
+                                <input class="form-control" type="text" tabindex="1" required autofocus
+                                    style="background-color: #f2f2f2" id="nok_fullname">
+                            </fieldset>
+                            <fieldset>
+                                <label><b>Contact address (next of kin)</b></label>
+                                <input class="form-control" placeholder="Street address" type="email" tabindex="2"
+                                    required style="background-color: #f2f2f2" id="nok_address">
+                            </fieldset>
+                            <fieldset>
+                                <input class="form-control" placeholder="City" type="email" tabindex="2" required
+                                    style="background-color: #f2f2f2" id="nok_city">
+                            </fieldset>
+                            <fieldset>
+                                <label><b>Phone number (next of kin)</b></label>
+                                <input class="form-control" placeholder="must be at least 11 digits" type="tel"
+                                    tabindex="3" required style="background-color: #f2f2f2" id="nok_phone">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: auto">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour"
+                            style="text-align:left;color:#660066;font-weight:bold">
+                            Customer Account Details
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <fieldset>
+                                <label><b>Account name</b></label>
+                                <input class="form-control" type="text" tabindex="1" required autofocus
+                                    style="background-color: #f2f2f2" id="customer_accname">
+                            </fieldset>
+                            <fieldset>
+                                <label><b>Account number</b></label>
+                                <input class="form-control" type="text" placeholder="must be 10 digits" tabindex="2"
+                                    required style="background-color: #f2f2f2" id="customer_accnumber">
+                            </fieldset>
+                            <fieldset>
+                                <label><b>Bank name</b></label>
+                                <select name="bank" class="form-control" id="bank" required [(ngModel)]="model.bank"
+                                    #bank="ngModel">
+                                    <option *ngFor="let banks of bank_names" [value]="banks">{{banks}}</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="card" style="width: auto">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseFive"
+                            style="text-align:center;color:#660066;font-weight:bold">
+                            FeedBack
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        <p style="padding: 3px;color:#660066;font-weight:bold">How did you find us?</p>
+                        <form class="form-group" id="contact" action="" method="post">
+                            <!-- Default unchecked -->
+                            <fieldset>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio" checked> Friend/Agent</label>
+                                    <label><input type="radio" name="optradio"> Whatsapp</label>
+                                    <label><input type="radio" name="optradio"> Mail</label>
+                                    <label><input type="radio" name="optradio"> Facebook</label>
+                                    <label><input type="radio" name="optradio"> Instagram</label>
+                                    <label><input type="radio" name="optradio"> Youtube</label>
+                                    <label><input type="radio" name="optradio"> Google</label>
+                                    <label><input type="radio" name="optradio"> Website</label>
+                                    <label><input type="radio" name="optradio"> LinkedIn</label>
+                                    <label><input type="radio" name="optradio"> Twitter</label>
+                                    <label><input type="radio" name="optradio"> Others</label>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <p style="color:black;padding:5px;">By submitting this form, you agree
+                            to the
+                            Company's(FloraHomes Global Consult L.T.D) Terms and Conditions</p>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I agree to the privacy
+                                policy.</label>
+                        </div>
+                        <p style="color:#660066;font-weight:bold">Note</p>
+                        <p style="color:black">If you've registered as an affiliate before on our website,
+                            kindly login to your affiliate account by making use of the affiliate login below
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success" [disabled]="!form.form.valid"
+                style="margin-top: 20px; text-align: center; box-shadow: 2px 5px 8px; background-color:#003300;border-color:#003300"
+                onclick="get()">Proceed</button>
+        </form>
+    </div>
+</section>

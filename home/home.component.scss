@@ -1,0 +1,220 @@
+.home   {
+    background-image:linear-gradient(to left, rgba(245, 246, 252, 0.15), rgba(117, 19, 93, 3)),
+    url("./../../assets/img/civic2.jpg");
+    background-size: cover;
+    /*margin-top:60px;*/
+    background-color:#fff;
+    height:85%;
+    display:flex;
+    align-items: flex-end;
+    position: relative;
+
+}
+.bg-overlay-dark {
+    position: relative;
+    z-index: 1;
+}
+.thin-text  {
+    font-weight:20px;
+}
+.bg-overlay-dark::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #0d1128;
+    background: -moz-linear-gradient(45deg, #0d1128 0%, #660066 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #0d1128), color-stop(100%, #660066));
+    background: -webkit-linear-gradient(45deg, #0d1128 0%, #660066 100%);
+    background: -o-linear-gradient(45deg, #0d1128 0%, #660066 100%);
+    background: -ms-linear-gradient(45deg, #0d1128 0%, #660066 100%);
+    background: linear-gradient(45deg, #0d1128 0%, #660066 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d1128', endColorstr='#660066', GradientType=1);
+    opacity: .7;
+}
+.larry  {
+  width: auto; /* to keep proportions */
+  height: 300px; /* to keep proportions */
+  max-width: 100%; /* not to stand out from div */
+  max-height: 100%; /* not to stand out from div */
+  float:right;
+}
+.larry-main  {
+    width: auto; /* to keep proportions */
+    height: 400px; /* to keep proportions */
+    max-width: 100%; /* not to stand out from div */
+    max-height: 100%; /* not to stand out from div */
+  }
+.seperator-green {
+    background-color: #407d2b;
+    width:100%;
+    height:10px;
+}
+.btn-w-border   {
+    border-color:#fff;
+    border-width:4px;
+}
+
+.freebie {
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(rgba(255,255,255,.0), rgba(255,255,255,.0)), url("./../../assets/img/freebie-area.jpg");
+    background-size: cover;
+    z-index:-1;
+    display:flex;
+    padding:40px;
+    justify-content: center;
+    align-items: center;
+}
+.port-img   {
+    height:auto;
+    width:100%;
+}
+  
+    @media screen and (max-width:736px) {
+        .freebie {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(rgba(255,255,255,.0), rgba(255,255,255,.0)), url("./../../assets/img/freebie-area.jpg");
+            background-size: cover;
+            z-index:-1;
+    }
+
+    @media screen and (max-width:414px) {
+        .freebie {
+            width: 100%;
+            height: auto;
+            background: linear-gradient(rgba(255,255,255,.0), rgba(255,255,255,.0)), url("./../../assets/img/freebie-area.jpg");
+            background-size: cover;
+            z-index:-1;
+    }
+}
+
+  }
+  .checklist    {
+      height:auto;
+      width:40%;
+  }
+.freebie h1 {
+    color:rgba(84, 20, 132);
+}
+.freebie p {
+    color:black;
+    font-weight:bold;
+}
+.dirty  {
+    background: linear-gradient(rgba(84, 20, 132,.9), rgba(84, 20, 132,.9));
+    height:auto;
+    width:100%;
+    padding:10px;
+}
+.carousel-img   {
+    margin-left:0;
+    margin-right:0;
+    display:block;
+    height:40%;
+    width:auto;
+}
+.linear-grad1   {
+    background-image:url("./../../assets/img/passion_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.linear-grad2   {
+    background:linear-gradient(rgba(221, 79, 5,1), rgba(221, 79, 5,1));
+}
+.bg-overlay{
+    position: relative;
+    z-index: 1;
+}
+.bg-overlay::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #0d1128;
+    background: -moz-linear-gradient(45deg, #0d1128 0%, #262626 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #0d1128), color-stop(100%, #262626));
+    background: -webkit-linear-gradient(45deg, #0d1128 0%, #262626 100%);
+    background: -o-linear-gradient(45deg, #0d1128 0%, #262626 100%);
+    background: -ms-linear-gradient(45deg, #0d1128 0%, #262626 100%);
+    background: linear-gradient(45deg, #0d1128 20%, #262626 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d1128', endColorstr='#262626', GradientType=1);
+    opacity: .5;
+}
+.product-img    {
+    height:90%;
+    width:90%;
+    margin:auto;
+}
+.static {
+    background-image:url("./../../assets/img/bb.jfif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-darker{
+    position: relative;
+    z-index: 1;
+}
+.bg-darker::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #0d1128;
+    background: -moz-linear-gradient(45deg, #0d1128 0%, #00004d 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #00004d), color-stop(100%, #00004d));
+    background: -webkit-linear-gradient(45deg, #0d1128 0%, #00004d 100%);
+    background: -o-linear-gradient(45deg, #0d1128 0%, #00004d 100%);
+    background: -ms-linear-gradient(45deg, #0d1128 0%, #00004d 100%);
+    background: linear-gradient(45deg, #0d1128 0%, #00004d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0d1128', endColorstr='#00004d', GradientType=1);
+    opacity: .95;
+}
+.sub    {
+    background-image:url("./../../assets/img/street3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub-h-container    {
+    background-color:#541484;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px;
+}
+#myModalBody    {
+    width:90%;
+    padding:10px;
+}
+.input-gray {
+    background-color:#f2f2f2;
+    border-color:#f2f2f2;
+}
+.lab-style  {
+    color:#541484;
+}
+.lab-style2  {
+    color:#407d2b;
+}
+.larry-img  {
+    background-image:url("./../../assets/img/roy.png");
+}
+  
+
+

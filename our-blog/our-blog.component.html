@@ -1,0 +1,29 @@
+<section class="blg-header">
+    <div>
+        <h1 style="color:#fff;text-align: center;font-size:8vw">OUR BLOG</h1>
+        <hr style="background-color:#fff;width:30%;padding:1px;margin:auto">
+    </div>
+</section>
+<br>
+<br>
+<br>
+<section>
+    <div class="container blog-pad" *ngFor="let item of _post">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src={{item.img_path}} class="blog-img" routerLink="/blog-post" />
+            </div>
+            <div class="col-sm-6">
+                <h3 style="color:black;text-align: left;" routerLink="/blog-post">{{item.blog_title}}</h3>
+                <hr>
+                <p style="color:gray;text-align: left;">{{item.blog_category}}</p>
+                <p style="color:black;text-align: left;">{{item.blog_content}}</p>
+                <small style="text-align:left">{{item.blog_post_date}}</small>
+                <br>
+                <small style="text-align:left">{{item.blog_id}}</small>
+                <br>
+                <button type="button" class="btn btn-primary" (click)="onSelect(item.blog_id)">Full Blog</button>
+            </div>
+        </div>
+    </div>
+</section>
